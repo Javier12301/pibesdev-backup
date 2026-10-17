@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PibesDev Backups: herramienta privada para respaldos cifrados de servidores en Google Drive mediante Rclone.">
+  <meta name="robots" content="index,follow">
+  <title>PibesDev Backups — Copias de seguridad privadas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="topbar"><a class="brand" href="./">PibesDev <span>Backups</span></a><nav aria-label="Navegación"><a href="privacidad.html">Privacidad</a></nav></header>
+    <main>
+      <div class="eyebrow">Herramienta interna · Google Drive API</div>
+      <h1>Copias de seguridad cifradas para la infraestructura de PibesDev.</h1>
+      <p class="lead">PibesDev Backups es una integración privada que utiliza <a href="https://rclone.org/">Rclone</a> y Google Drive para almacenar y recuperar respaldos de nuestros servidores. No es un servicio público ni permite registrar usuarios.</p>
+      <section aria-labelledby="funcionamiento">
+        <h2 id="funcionamiento">Cómo funciona</h2>
+        <div class="features">
+          <div><strong>1 · Generación</strong><p>El servidor genera respaldos de bases PostgreSQL y archivos persistentes de las aplicaciones administradas por el equipo.</p></div>
+          <div><strong>2 · Cifrado</strong><p>El flujo de backup está diseñado para cifrar los archivos antes de subirlos mediante Rclone Crypt. Su puesta en producción depende de verificar el cifrado y la restauración.</p></div>
+          <div><strong>3 · Almacenamiento</strong><p>Una cuenta de Google expresamente autorizada permite crear y administrar únicamente los archivos y carpetas accesibles para esta integración mediante el permiso <code>drive.file</code>.</p></div>
+        </div>
+      </section>
+      <section aria-labelledby="permisos">
+        <h2 id="permisos">Acceso limitado a Drive</h2>
+        <p>Solicitamos el permiso <code>https://www.googleapis.com/auth/drive.file</code> para crear, consultar, actualizar y recuperar las copias que administra Rclone. No solicitamos acceso general a los demás archivos de Google Drive.</p>
+        <p>La aplicación se utiliza únicamente por sus administradores para mantener los respaldos de infraestructura. No ofrece acceso a terceros a través de esta página.</p>
+      </section>
+      <section aria-labelledby="informacion">
+        <h2 id="informacion">Más información</h2>
+        <p>Consultá nuestra <a href="privacidad.html">Política de privacidad</a> para saber cómo se utilizan los datos y las credenciales de Google.</p>
+        <p>Contacto y consultas técnicas: <a href="https://github.com/Javier12301/pibesdev-backups/issues">GitHub Issues del proyecto</a>.</p>
+      </section>
+    </main>
+    <footer><span>© 2026 PibesDev Backups</span><a href="privacidad.html">Política de privacidad</a></footer>
+  </div>
+</body>
+</html>

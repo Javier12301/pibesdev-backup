@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de privacidad de la integración privada PibesDev Backups con Google Drive API.">
+  <title>Política de privacidad — PibesDev Backups</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="topbar"><a class="brand" href="./">PibesDev <span>Backups</span></a><nav aria-label="Navegación"><a href="./">Inicio</a></nav></header>
+    <main class="policy">
+      <div class="eyebrow">Última actualización: 17 de octubre de 2026</div>
+      <h1>Política de privacidad</h1>
+      <p class="lead">Esta política describe el uso de los datos de Google que realiza PibesDev Backups, una herramienta interna de copias de seguridad administrada por PibesDev.</p>
+      <h2>1. Finalidad</h2>
+      <p>Utilizamos Google Drive como destino de almacenamiento externo para respaldos de infraestructura, incluyendo bases de datos y archivos persistentes de aplicaciones. Esta página es informativa y no recibe archivos ni credenciales de los visitantes.</p>
+      <h2>2. Permisos y datos de Google</h2>
+      <p>La integración utiliza OAuth 2.0 con el permiso <code>https://www.googleapis.com/auth/drive.file</code>, que permite a Rclone acceder a los archivos y carpetas creados o abiertos expresamente mediante esta aplicación. Se usa para subir, listar, descargar, reemplazar y eliminar copias administradas por la integración según las tareas configuradas por el administrador. No se solicita lectura general de los demás archivos del Drive personal.</p>
+      <h2>3. Cifrado y almacenamiento</h2>
+      <p>El proceso de respaldos está diseñado para cifrar localmente el contenido y los nombres de archivo con Rclone Crypt antes de subirlos a Google Drive. Antes de usar respaldos de producción, verificaremos y probaremos ese cifrado. Google almacena los archivos que la integración le envíe conforme a las condiciones de Google Drive. Las claves para descifrar las copias se administran por separado del almacenamiento remoto.</p>
+      <h2>4. Credenciales OAuth</h2>
+      <p>Los tokens de autorización de Rclone se guardan en la configuración privada del servidor y solo se utilizan para acceder a Google Drive en nombre de la cuenta que haya autorizado la integración. No se publican en este sitio ni se incluyen en el código fuente público.</p>
+      <h2>5. Compartición y usos prohibidos</h2>
+      <p>No vendemos los datos de Google a terceros, no los utilizamos para anuncios ni perfiles publicitarios y no los compartimos con terceros ajenos a la operación de los respaldos. El acceso a los respaldos está limitado a los administradores autorizados y al almacenamiento proporcionado por Google.</p>
+      <h2>6. Conservación y eliminación</h2>
+      <p>Las copias se conservarán durante los periodos definidos por el administrador en el procedimiento de respaldos. Las copias pueden eliminarse desde Google Drive o mediante las tareas de mantenimiento autorizadas. El usuario también puede revocar el permiso de la aplicación desde la configuración de seguridad de su cuenta de Google; revocar el permiso impide futuros accesos, pero no elimina automáticamente los archivos ya almacenados.</p>
+      <h2>7. Seguridad y restauración</h2>
+      <p>El objetivo operativo es realizar respaldos cifrados, verificar su integridad y probar procedimientos de recuperación antes de confiarles datos críticos. Ninguna copia debe considerarse protegida hasta que estas medidas estén implementadas y validadas.</p>
+      <h2>8. Contacto y cambios</h2>
+      <p>Para consultas relacionadas con esta integración, utilizá <a href="https://github.com/Javier12301/pibesdev-backups/issues">el registro de incidencias del proyecto</a>. Actualizaremos esta política si cambia el alcance de los permisos, el tratamiento de los datos o el almacenamiento utilizado.</p>
+      <p><a href="./">← Volver a la página principal</a></p>
+    </main>
+    <footer><span>© 2026 PibesDev Backups</span><a href="./">Inicio</a></footer>
+  </div>
+</body>
+</html>
