@@ -12,7 +12,7 @@ No contiene claves OAuth, tokens, contraseñas ni datos de usuarios.
 
 ## Publicación mediante GitHub Pages
 
-1. Crear el repositorio **público** `Javier12301/pibesdev-backups` con rama `main`.
+1. Crear el repositorio **público** `Javier12301/pibesdev-backup` con rama `main`.
 2. Subir los archivos a la raíz de `main`.
 3. Ir a **Settings → Pages → Build and deployment**.
 4. Seleccionar **Deploy from a branch**, `main`, `/(root)` y guardar.
@@ -20,8 +20,8 @@ No contiene claves OAuth, tokens, contraseñas ni datos de usuarios.
 
 URLs esperadas (una vez publicadas):
 
-- Página principal: `https://javier12301.github.io/pibesdev-backups/`
-- Política de privacidad: `https://javier12301.github.io/pibesdev-backups/privacidad.html`
+- Página principal: `https://javier12301.github.io/pibesdev-backup/`
+- Política de privacidad: `https://javier12301.github.io/pibesdev-backup/privacidad.html`
 
 ## Nota sobre Google OAuth
 
